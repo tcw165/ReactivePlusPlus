@@ -167,24 +167,27 @@ $(document).ready(function(){initNavTree('specific__observable_8hpp_source.html'
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            m_state(subscriber);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">if</span> (subscriber.is_subscribed())</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                subscriber.on_error(std::current_exception());</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">throw</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> subscriber.get_subscription();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    [[no_unique_address]] OnSubscribeFn m_state;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> OnSub&gt;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;specific_observable(OnSub on_subscribe) -&gt; specific_observable&lt;utils::extract_subscriber_type_t&lt;utils::function_argument_t&lt;OnSub&gt;&gt;, OnSub&gt;;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// namespace rpp</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">if</span> (subscriber.is_subscribed())</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                m_state(subscriber);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span> (subscriber.is_subscribed())</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                subscriber.on_error(std::current_exception());</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> subscriber.get_subscription();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    [[no_unique_address]] OnSubscribeFn m_state;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> OnSub&gt;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;specific_observable(OnSub on_subscribe) -&gt; specific_observable&lt;utils::extract_subscriber_type_t&lt;utils::function_argument_t&lt;OnSub&gt;&gt;, OnSub&gt;;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// namespace rpp</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassrpp_1_1dynamic__observable_html"><div class="ttname"><a href="classrpp_1_1dynamic__observable.html">rpp::dynamic_observable</a></div><div class="ttdoc">type-erased alternative of observable (comparing to rpp::specific_observable).</div><div class="ttdef"><b>Definition:</b> dynamic_observable.hpp:84</div></div>

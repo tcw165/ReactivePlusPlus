@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['subscribe_5fon_242',['subscribe_on',['../group__utility__operators.html#ga0608a5ced9a5b3b57f4c97a9b2f634f4',1,'rpp::details::member_overload&lt; Type, SpecificObservable, subscribe_on_tag &gt;']]],
-  ['switch_5fon_5fnext_243',['switch_on_next',['../group__combining__operators.html#gac9a4fd5e39aef8493fa07e2437066aad',1,'rpp::details::member_overload&lt; Type, SpecificObservable, switch_on_next_tag &gt;']]]
+  ['ref_5fcount_280',['ref_count',['../group__connectable__operators.html#ga37ff1997452889d3aa64ea732564a89f',1,'rpp::details::member_overload&lt; Type, SpecificObservable, ref_count_tag &gt;']]],
+  ['repeat_281',['repeat',['../group__utility__operators.html#gaf8859f765d0f97e28957f3416e688f7a',1,'rpp::details::member_overload&lt; Type, SpecificObservable, repeat_tag &gt;::repeat(size_t count) const &amp;requires is_header_included&lt; repeat_tag'],['../group__utility__operators.html#ga0a1b02a8b65c4413bdda609683e63417',1,'rpp::details::member_overload&lt; Type, SpecificObservable, repeat_tag &gt;::repeat() const &amp;requires is_header_included&lt; repeat_tag']]]
 ];

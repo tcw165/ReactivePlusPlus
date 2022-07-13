@@ -2,7 +2,9 @@ var examples =
 [
     [ "create.cpp", "create_8cpp-example.html", null ],
     [ "filter.cpp", "filter_8cpp-example.html", null ],
+    [ "flat_map.cpp", "flat_map_8cpp-example.html", null ],
     [ "from.cpp", "from_8cpp-example.html", null ],
+    [ "group_by.cpp", "group_by_8cpp-example.html", null ],
     [ "just.cpp", "just_8cpp-example.html", null ],
     [ "map.cpp", "map_8cpp-example.html", null ],
     [ "merge.cpp", "merge_8cpp-example.html", null ],
@@ -12,6 +14,7 @@ var examples =
     [ "ref_count.cpp", "ref_count_8cpp-example.html", null ],
     [ "repeat.cpp", "repeat_8cpp-example.html", null ],
     [ "run_loop.cpp", "run_loop_8cpp-example.html", null ],
+    [ "scan.cpp", "scan_8cpp-example.html", null ],
     [ "subscribe_on.cpp", "subscribe_on_8cpp-example.html", null ],
     [ "switch_on_next.cpp", "switch_on_next_8cpp-example.html", null ],
     [ "take.cpp", "take_8cpp-example.html", null ],

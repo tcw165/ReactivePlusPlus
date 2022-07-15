@@ -436,7 +436,11 @@ template&lt;switch_map_callable&lt; Type &gt; Callable&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new <a class="el" href="classrpp_1_1specific__observable.html" title="observable specified with specific type of OnSubscribeFn. Used to store OnSubscribeFn function as is ...">specific_observable</a> with the switch_map operator as most recent operator. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>#include &lt;<a class="el" href="switch__map_8hpp_source.html">rpp/operators/switch_map.hpp</a>&gt;</dd></dl>
-<dl class="section user"><dt>Example:</dt><dd><div class="fragment"></div><!-- fragment --></dd></dl>
+<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line">    <a class="code" href="group__creational__operators.html#gabc5067fa9aefaa803f6e329b75faa00c">rpp::source::just</a>(1, 2, 3)</div>
+<div class="line">            .switch_map([](<span class="keywordtype">int</span> val) { <span class="keywordflow">return</span> rpp::source::from_iterable(std::vector(val, val)); })</div>
+<div class="line">            .subscribe([](<span class="keywordtype">int</span> v) { std::cout &lt;&lt; v &lt;&lt; <span class="stringliteral">&quot; &quot;</span>; });</div>
+<div class="line">    <span class="comment">// Output: 1 2 2 3 3 3</span></div>
+</div><!-- fragment --></dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://reactivex.io/documentation/operators/switchmap.html">https://reactivex.io/documentation/operators/switchmap.html</a> </dd></dl>
 
 </div>

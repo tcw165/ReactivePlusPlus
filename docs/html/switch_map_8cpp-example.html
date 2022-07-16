@@ -102,9 +102,21 @@ $(document).ready(function(){initNavTree('switch_map_8cpp-example.html',''); ini
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <a name="a0"></a><a class="code" href="group__creational__operators.html#gabc5067fa9aefaa803f6e329b75faa00c">rpp::source::just</a>(1, 2, 3)</div>
-<div class="line">            .switch_map([](<span class="keywordtype">int</span> val) { <span class="keywordflow">return</span> rpp::source::from_iterable(std::vector(val, val)); })</div>
-<div class="line">            .subscribe([](<span class="keywordtype">int</span> v) { std::cout &lt;&lt; v &lt;&lt; <span class="stringliteral">&quot; &quot;</span>; });</div>
-<div class="line">    <span class="comment">// Output: 1 2 2 3 3 3</span></div>
+<div class="line">            .switch_map([](<span class="keywordtype">int</span> val) {</div>
+<div class="line">                <span class="keywordflow">if</span> (val == 1)</div>
+<div class="line">                    <span class="keywordflow">return</span> rpp::source::never&lt;int&gt;()</div>
+<div class="line"><span class="comment">//                        .lift([](rpp::dynamic_subscriber&lt;int&gt; subscriber) {</span></div>
+<div class="line"><span class="comment">//                            subscriber.get_subscription().add([] {</span></div>
+<div class="line"><span class="comment">//                                std::cout &lt;&lt; &quot;x-&quot;; // x is notation for unsubscribed</span></div>
+<div class="line"><span class="comment">//                            });</span></div>
+<div class="line"><span class="comment">//                        })</span></div>
+<div class="line">                        .as_dynamic();</div>
+<div class="line"> </div>
+<div class="line">                <span class="keywordflow">return</span> rpp::source::from_iterable(std::vector{val, val})</div>
+<div class="line">                    .as_dynamic();</div>
+<div class="line">            })</div>
+<div class="line">            .subscribe([](<span class="keywordtype">int</span> v) { std::cout &lt;&lt; v &lt;&lt; <span class="stringliteral">&quot;-&quot;</span>; });</div>
+<div class="line">    <span class="comment">// Output: x-2-2-3-3-</span></div>
 <div class="line"><span class="comment"></span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->

@@ -440,11 +440,12 @@ template&lt;switch_map_callable&lt; Type &gt; Callable&gt; </div>
 <div class="line">            .switch_map([](<span class="keywordtype">int</span> val) {</div>
 <div class="line">                <span class="keywordflow">if</span> (val == 1)</div>
 <div class="line">                    <span class="keywordflow">return</span> rpp::source::never&lt;int&gt;()</div>
-<div class="line"><span class="comment">//                        .lift([](rpp::dynamic_subscriber&lt;int&gt; subscriber) {</span></div>
-<div class="line"><span class="comment">//                            subscriber.get_subscription().add([] {</span></div>
-<div class="line"><span class="comment">//                                std::cout &lt;&lt; &quot;x-&quot;; // x is notation for unsubscribed</span></div>
-<div class="line"><span class="comment">//                            });</span></div>
-<div class="line"><span class="comment">//                        })</span></div>
+<div class="line">                        .lift([&amp;](<a class="code" href="classrpp_1_1dynamic__subscriber.html">rpp::dynamic_subscriber&lt;int&gt;</a> sub) {</div>
+<div class="line">                            sub.get_subscription().add([&amp;]() {</div>
+<div class="line">                                std::cout &lt;&lt; <span class="stringliteral">&quot;x-&quot;</span>; <span class="comment">// x is notation for unsubscribed</span></div>
+<div class="line">                            });</div>
+<div class="line">                            <span class="keywordflow">return</span> sub;</div>
+<div class="line">                        })</div>
 <div class="line">                        .as_dynamic();</div>
 <div class="line"> </div>
 <div class="line">                <span class="keywordflow">return</span> rpp::source::from_iterable(std::vector{val, val})</div>
@@ -460,6 +461,7 @@ template&lt;switch_map_callable&lt; Type &gt; Callable&gt; </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__creational__operators_html_gabc5067fa9aefaa803f6e329b75faa00c"><div class="ttname"><a href="group__creational__operators.html#gabc5067fa9aefaa803f6e329b75faa00c">rpp::observable::just</a></div><div class="ttdeci">auto just(const schedulers::constraint::scheduler auto &amp;scheduler, T &amp;&amp;item, Ts &amp;&amp;...items) requires(rpp</div><div class="ttdoc">Creates rpp::specific_observable that emits a particular items and completes.</div><div class="ttdef"><b>Definition:</b> from.hpp:159</div></div>
+<div class="ttc" id="aclassrpp_1_1dynamic__subscriber_html"><div class="ttname"><a href="classrpp_1_1dynamic__subscriber.html">rpp::dynamic_subscriber</a></div><div class="ttdoc">subscriber which uses dynamic_observer&lt;T&gt; to hide original callbacks</div><div class="ttdef"><b>Definition:</b> dynamic_subscriber.hpp:23</div></div>
 <div class="ttc" id="agroup__transforming__operators_html_ga2215c20ce73e16977568e7db1900ce65"><div class="ttname"><a href="group__transforming__operators.html#ga2215c20ce73e16977568e7db1900ce65">rpp::details::member_overload&lt; Type, SpecificObservable, map_tag &gt;::map</a></div><div class="ttdeci">auto map(Callable &amp;&amp;callable) const &amp;requires is_header_included&lt; map_tag</div><div class="ttdoc">Transform the items emitted by an Observable via applying a function to each item and emitting result...</div></div>
 <div class="ttc" id="agroup__transforming__operators_html_gaf3399da92ac6a0a4c392107b5b405a60"><div class="ttname"><a href="group__transforming__operators.html#gaf3399da92ac6a0a4c392107b5b405a60">rpp::details::member_overload&lt; Type, SpecificObservable, group_by_tag &gt;::group_by</a></div><div class="ttdeci">auto group_by(KeySelector &amp;&amp;key_selector, ValueSelector &amp;&amp;value_selector={}, KeyComparator &amp;&amp;comparator={}) const &amp;requires is_header_included&lt; group_by_tag</div><div class="ttdoc">Divide original observable into multiple observables where each new observable emits some group of va...</div></div>
 <!-- start footer part -->

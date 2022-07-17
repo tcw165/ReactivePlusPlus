@@ -296,9 +296,6 @@ auto \mbox{\hyperlink{structrpp_1_1details_1_1member__overload}{rpp\+::details\+
 
 convert an Observable that emits Observables into a single Observable that emits the items emitted by the most-\/recently-\/emitted of those Observables 
 
-\begin{DoxyWarning}{Warning}
-According to observable contract (\href{https://reactivex.io/documentation/operators/switch.html}{\texttt{ https\+://reactivex.\+io/documentation/operators/switch.\+html}}) emissions from any observable should be serialized, so, resulting observable uses mutex to satisfy this requirement
-\end{DoxyWarning}
 
 
 Actually it makes {\ttfamily map} and then {\ttfamily switch\+\_\+on\+\_\+next}.

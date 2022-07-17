@@ -423,7 +423,6 @@ template&lt;switch_map_callable&lt; Type &gt; Callable&gt; </div>
 </div><div class="memdoc">
 
 <p>convert an Observable that emits Observables into a single Observable that emits the items emitted by the most-recently-emitted of those Observables </p>
-<dl class="section warning"><dt>Warning</dt><dd>According to observable contract (<a href="https://reactivex.io/documentation/operators/switch.html">https://reactivex.io/documentation/operators/switch.html</a>) emissions from any observable should be serialized, so, resulting observable uses mutex to satisfy this requirement</dd></dl>
 <div class="image">
 <object type="image/svg+xml" data="switch_map.svg" style="pointer-events: none;"></object>
 </div>

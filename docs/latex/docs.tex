@@ -4,7 +4,8 @@
 \item \mbox{\hyperlink{advanced}{Advanced Guide}} -\/ everything about R\+PP in details
 \item \mbox{\hyperlink{specific_vs_dynamic}{Performance vs Flexibility\+: Specific vs Dynamic}} -\/ overview of the concept of {\ttfamily specific\+\_\+} and {\ttfamily dynamic\+\_\+} types used in {\bfseries{R\+PP}} and how it affects performance
 \item \mbox{\hyperlink{memory_model}{Memory Model}} -\/ overview of new concept used in R\+PP related to copy/move/heap usage for objects passed inside R\+PP
-\item \mbox{\hyperlink{status}{Implementation status}} -\/ current implementation status 
+\item \mbox{\hyperlink{status}{Implementation status}} -\/ current implementation status
+\item \href{https://medium.com/@victimsnino/what-is-actually-reactive-programming-in-modern-c-part-1-base-929355ac2901?source=friends_link&sk=59986e68b0688469c65ca0c757bbfd89}{\texttt{ What is actually reactive programming in modern C++? Part. 1\+: Base}} 
 \end{DoxyItemize}\hypertarget{quick_start}{}\doxysection{Quick Start}\label{quick_start}
 \hypertarget{quick_start_autotoc_md20}{}\doxysubsection{Brief workflow}\label{quick_start_autotoc_md20}
 For the brief overview of the Reactive pattern read \href{https://reactivex.io/}{\texttt{ https\+://reactivex.\+io/}}.
@@ -309,7 +310,7 @@ As a a result, users can select preferable way of handling of their types. \hype
 \item \mbox{[} \mbox{]} async
 \end{DoxyItemize}
 \item \mbox{[} \mbox{]} defer
-\item \mbox{[} \mbox{]} interval
+\item \mbox{[}x\mbox{]} interval
 \item \mbox{[} \mbox{]} range
 \item \mbox{[} \mbox{]} repeat
 \item \mbox{[} \mbox{]} timer
@@ -366,14 +367,14 @@ As a a result, users can select preferable way of handling of their types. \hype
 \item \mbox{[} \mbox{]} switch\+\_\+if\+\_\+empty
 \end{DoxyItemize}
 \item \mbox{[}x\mbox{]} with\+\_\+latest\+\_\+from
+\item \mbox{[}x\mbox{]} start\+\_\+with
 \item \mbox{[} \mbox{]} combine\+\_\+latest
-\item \mbox{[} \mbox{]} start\+\_\+with
 \item \mbox{[} \mbox{]} zip
 \end{DoxyItemize}\hypertarget{status_autotoc_md12}{}\doxysubsubsection{Aggregate}\label{status_autotoc_md12}
 
 \begin{DoxyItemize}
 \item \mbox{[} \mbox{]} average
-\item \mbox{[} \mbox{]} concat
+\item \mbox{[}x\mbox{]} concat
 \item \mbox{[} \mbox{]} count
 \item \mbox{[} \mbox{]} max
 \item \mbox{[} \mbox{]} min

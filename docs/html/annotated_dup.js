@@ -4,6 +4,7 @@ var annotated_dup =
       [ "details", null, [
         [ "concat_impl", "structrpp_1_1details_1_1concat__impl.html", "structrpp_1_1details_1_1concat__impl" ],
         [ "concat_state_t", "structrpp_1_1details_1_1concat__state__t.html", "structrpp_1_1details_1_1concat__state__t" ],
+        [ "distinct_until_changed_impl", "structrpp_1_1details_1_1distinct__until__changed__impl.html", "structrpp_1_1details_1_1distinct__until__changed__impl" ],
         [ "dynamic_observable_state", "classrpp_1_1details_1_1dynamic__observable__state.html", "classrpp_1_1details_1_1dynamic__observable__state" ],
         [ "filter_impl", "structrpp_1_1details_1_1filter__impl.html", "structrpp_1_1details_1_1filter__impl" ],
         [ "forwarding_on_completed", "structrpp_1_1details_1_1forwarding__on__completed.html", "structrpp_1_1details_1_1forwarding__on__completed" ],
@@ -13,10 +14,12 @@ var annotated_dup =
         [ "group_by_on_subscribe", "structrpp_1_1details_1_1group__by__on__subscribe.html", "structrpp_1_1details_1_1group__by__on__subscribe" ],
         [ "group_by_state", "structrpp_1_1details_1_1group__by__state.html", "structrpp_1_1details_1_1group__by__state" ],
         [ "group_by_state_base", "classrpp_1_1details_1_1group__by__state__base.html", "classrpp_1_1details_1_1group__by__state__base" ],
+        [ "lift_action", "structrpp_1_1details_1_1lift__action.html", "structrpp_1_1details_1_1lift__action" ],
         [ "lift_action_by_callbacks", "structrpp_1_1details_1_1lift__action__by__callbacks.html", "structrpp_1_1details_1_1lift__action__by__callbacks" ],
         [ "map_impl", "structrpp_1_1details_1_1map__impl.html", "structrpp_1_1details_1_1map__impl" ],
         [ "member_overload", "structrpp_1_1details_1_1member__overload.html", null ],
         [ "member_overload< Type, SpecificObservable, concat_tag >", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01concat__tag_01_4.html", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01concat__tag_01_4" ],
+        [ "member_overload< Type, SpecificObservable, distinct_until_changed_tag >", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01distinct__until__changed__tag_01_4.html", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01distinct__until__changed__tag_01_4" ],
         [ "member_overload< Type, SpecificObservable, filter_tag >", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01filter__tag_01_4.html", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01filter__tag_01_4" ],
         [ "member_overload< Type, SpecificObservable, flat_map_tag >", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01flat__map__tag_01_4.html", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01flat__map__tag_01_4" ],
         [ "member_overload< Type, SpecificObservable, group_by_tag >", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01group__by__tag_01_4.html", "structrpp_1_1details_1_1member__overload_3_01_type_00_01_specific_observable_00_01group__by__tag_01_4" ],
@@ -42,6 +45,7 @@ var annotated_dup =
         [ "observable_tag", "structrpp_1_1details_1_1observable__tag.html", null ],
         [ "observe_on_impl", "structrpp_1_1details_1_1observe__on__impl.html", "structrpp_1_1details_1_1observe__on__impl" ],
         [ "observer_tag", "structrpp_1_1details_1_1observer__tag.html", null ],
+        [ "ref_count_on_subscribe", "structrpp_1_1details_1_1ref__count__on__subscribe.html", "structrpp_1_1details_1_1ref__count__on__subscribe" ],
         [ "ref_count_state_t", "structrpp_1_1details_1_1ref__count__state__t.html", "structrpp_1_1details_1_1ref__count__state__t" ],
         [ "repeat_on_completed", "classrpp_1_1details_1_1repeat__on__completed.html", "classrpp_1_1details_1_1repeat__on__completed" ],
         [ "scan_impl", "structrpp_1_1details_1_1scan__impl.html", "structrpp_1_1details_1_1scan__impl" ],
@@ -53,6 +57,7 @@ var annotated_dup =
         [ "switch_on_next_state_t", "structrpp_1_1details_1_1switch__on__next__state__t.html", "structrpp_1_1details_1_1switch__on__next__state__t" ],
         [ "take_impl", "structrpp_1_1details_1_1take__impl.html", "structrpp_1_1details_1_1take__impl" ],
         [ "take_while_impl", "structrpp_1_1details_1_1take__while__impl.html", "structrpp_1_1details_1_1take__while__impl" ],
+        [ "with_latest_from_impl", "structrpp_1_1details_1_1with__latest__from__impl.html", "structrpp_1_1details_1_1with__latest__from__impl" ],
         [ "with_latest_from_state_t", "structrpp_1_1details_1_1with__latest__from__state__t.html", "structrpp_1_1details_1_1with__latest__from__state__t" ]
       ] ],
       [ "observable", null, [

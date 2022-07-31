@@ -1,5 +1,6 @@
 var dir_b39606649fae5912634cd95bf9ef094c =
 [
+    [ "buffer.hpp", "fwd_2buffer_8hpp_source.html", null ],
     [ "concat.hpp", "fwd_2concat_8hpp_source.html", null ],
     [ "distinct_until_changed.hpp", "fwd_2distinct__until__changed_8hpp_source.html", null ],
     [ "filter.hpp", "fwd_2filter_8hpp_source.html", null ],
@@ -21,5 +22,6 @@ var dir_b39606649fae5912634cd95bf9ef094c =
     [ "switch_on_next.hpp", "fwd_2switch__on__next_8hpp_source.html", null ],
     [ "take.hpp", "fwd_2take_8hpp_source.html", null ],
     [ "take_while.hpp", "fwd_2take__while_8hpp_source.html", null ],
+    [ "window.hpp", "fwd_2window_8hpp_source.html", null ],
     [ "with_latest_from.hpp", "fwd_2with__latest__from_8hpp_source.html", null ]
 ];

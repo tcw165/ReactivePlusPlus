@@ -1,5 +1,6 @@
 var examples =
 [
+    [ "buffer.cpp", "buffer_8cpp-example.html", null ],
     [ "concat.cpp", "concat_8cpp-example.html", null ],
     [ "create.cpp", "create_8cpp-example.html", null ],
     [ "distinct_until_changed.cpp", "distinct_until_changed_8cpp-example.html", null ],
@@ -25,5 +26,6 @@ var examples =
     [ "switch_on_next.cpp", "switch_on_next_8cpp-example.html", null ],
     [ "take.cpp", "take_8cpp-example.html", null ],
     [ "take_while.cpp", "take_while_8cpp-example.html", null ],
+    [ "window.cpp", "window_8cpp-example.html", null ],
     [ "with_latest_from.cpp", "with_latest_from_8cpp-example.html", null ]
 ];
